@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Panitikan Films</title>
+    <link rel="icon" type="image" href="img/icon.jpeg"> </link>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo"><span><img class="logo1" src="img/logo-removebg-preview.png" alt=""></span>ᜉᜈᜒᜆᜒᜃᜈ᜔</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item "><a href="index.html">HOME</a></li>
+                    <li class="menu-list-item "><a href="about.html">ABOUT</a></li>
+                    <li class="menu-list-item "><a href="contact.html ">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="content-wrapper">
+            <div class="content">
+                <section>
+                    <h2>Kasaysayan</h2>
+                    <p>Ang Panitikan Film’s ay isang plataporma na naglalayong itaguyod ang Panitikang Pilipino sa pamamagitan ng pelikula, itinatampok ang mayamang kasaysayan at kultura ng ating bayan</p>
+                </section>
+                <section>
+                    <h2>Misyon</h2>
+                    <p>Buhayin ang mga akdang pampanitikan sa pamamagitan ng pelikula upang higit pang mapahalagahan ang ating kultura.</p>
+                </section>
+                <section id="moreContent" class="hidden">
+                    <h2>Bisyon</h2>
+                    <p>Maging pangunahing plataporma para sa pampanitikang pelikulang Pilipino na nagbibigay-inspirasyon at kaalaman sa bawat manonood.</p>
+                    <h2>Mga Uri ng Pelikula</h2>
+                    <p>Talambuhay ng mga Bayani – Mga pelikulang naglalahad ng buhay at ambag ng mga dakilang Pilipino tulad nina Jose Rizal, Andres Bonifacio, at iba pa.<br>Alamat, Mito, at Paniniwala – Mga kwentong may kaugnayan sa kulturang Pilipino,
+                        kabilang ang mga alamat, kulam, pagpag, pagtatawas, at iba pang paniniwalang bayan.<br>Dulang Pampelikula – Mga makabuluhang kwento ng Pilipino sa anyo ng drama at ipinapakita ang ating tradisyon, kaugalian, at tunay na buhay.</p>
+                </section>
+                <button id="toggleButton" onclick="showMore()">Read More</button>
+                <div class="social-icons-container">
+                    <div>
+                        <p><strong>Raven Jay Cayanan</strong></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/ravenjay.cayanan.3" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/rvnjy12?t=Fws9iSVaHjgDcQP2fqZDuQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/rvn.j_y?igsh=MWJ1NTZoaTl2dnl2MA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p><strong>Wensley Kate Gonzales</strong></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/kgnzlsss" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/kg.zzx?igsh=YnBlcHJzczBxNzhu" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="img/icon.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Panitikan Films. All rights reserved.</p>
+        <p>Website by Raven Jay Cayanan & Wensley Kate Gonzales</p>
+    </footer>
+    <script>
+        function showMore() {
+            var content = document.getElementById('moreContent');
+            var button = document.getElementById('toggleButton');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                button.textContent = 'Read Less';
+            } else {
+                content.classList.add('hidden');
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>
